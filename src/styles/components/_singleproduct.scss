@@ -40,7 +40,9 @@
     &__tags {
       display: flex;
       flex-wrap: wrap;
+      margin-top: 1rem;
     }
+
     &__rating-and-host {
       margin-top: 5px;
       margin-bottom: 20px;
@@ -63,4 +65,13 @@
         column-gap: 80px;
       }
     }
+  }
+
+.text_tag {
+    display: inline-block;
+margin: .25rem 1rem .25rem 0;
+padding: .25rem 2rem;
+border-radius: .5rem;
+color: #fff;
+background-color: #ff6060;
   }

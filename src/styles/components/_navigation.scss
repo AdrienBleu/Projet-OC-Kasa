@@ -39,10 +39,10 @@
         text-decoration: none;
         font-size: 50px;
         @include media-query(small) {
-          font-size: small;
+          font-size: large;
         }
         @include media-query(medium) {
-          font-size: medium;
+          font-size: large;
         }
         @include media-query(large) {
           font-size: x-large;

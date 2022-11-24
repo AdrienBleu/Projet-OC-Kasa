@@ -45,6 +45,7 @@ const Slider = ({ slides }) => {
         </>
       ) : null}
     </div>
+
   );
 };
 

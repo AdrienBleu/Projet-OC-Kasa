@@ -3,7 +3,7 @@ import React from "react";
 const Tags = ({ getTag }) => {
   return (
     <div className="tag">
-      <p className="tag__text">{getTag}</p>
+      <p className="text_tag">{getTag}</p>
     </div>
   );
 };

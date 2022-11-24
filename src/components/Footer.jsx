@@ -1,6 +1,6 @@
 import React from "react";
 
-import logoFooter from "../assets/img/logofooter.png";
+import logoFooter from "../assets/img/LOGO_footer.svg";
 
 const Footer = () => {
   const effectiveYear = new Date().getFullYear();
