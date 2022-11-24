@@ -7,7 +7,13 @@
     overflow: hidden;
     display: flex;     
     background: #000;
-  
+    @include media-query(small) {
+      height: 7rem;
+    }
+    @include media-query(medium) {
+      height: 7rem;
+    }
+    
     &__img {
       width: inherit;
       height: inherit;
@@ -29,11 +35,11 @@
       font-weight: bold;
       @include media-query(small) {
         padding: 5%;
-        font-size: 24px;
+        font-size: 35px;
       }
       @include media-query(large) {
         padding: 20%;
-        font-size: 50px;
+        font-size: 35px;
       }
     }
   
