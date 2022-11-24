@@ -1,0 +1,45 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .errorNumber {
+    margin: 66px;
+    width: 599px;
+    height: 263px;
+  }
+
+  .errorText {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: $color-1;
+    margin-bottom: 142px;
+  }
+  .errorBackLink {
+    font-size: 18px;
+    color: $color-1;
+    margin: 42px;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .errorNumber {
+    width: 198px;
+    height: 99px;
+  }
+  .errorText {
+    font-size: 18px;
+    margin-bottom: 133px;
+    width: 260px;
+    height: 52px;
+  }
+  .errorBackLink {
+    font-size: 20px;
+    margin: 42px;
+  }
+}
