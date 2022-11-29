@@ -7,13 +7,6 @@
     overflow: hidden;
     display: flex;     
     background: #000;
-    @include media-query(small) {
-      height: 7rem;
-    }
-    @include media-query(medium) {
-      height: 7rem;
-    }
-    
     &__img {
       width: inherit;
       height: inherit;
@@ -26,21 +19,23 @@
       position: absolute;
       justify-items: center;
       align-self: center;
-      font-size: 50px;
       font-weight: 500;
-      padding: 20%;
       line-height: 142.6%;
       color: $white;
       box-sizing: inherit;
       font-weight: bold;
-      @include media-query(small) {
+      padding: 5%;
+      font-size: 35px;
+      text-align: left;
+
+      @include media-query(medium) {
         padding: 5%;
         font-size: 35px;
-      }
+        text-align: left; }
+
       @include media-query(large) {
         padding: 20%;
-        font-size: 35px;
-      }
+        font-size: 50px;}
     }
   
     &__overlay {

@@ -8,6 +8,8 @@ const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
+
+
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -44,6 +46,9 @@ const Slider = ({ slides }) => {
           </div>
         </>
       ) : null}
+                  <div className="slider__count">
+                <span>{current+1}/{slides.length}</span>
+            </div>
     </div>
 
   );

@@ -1,6 +1,7 @@
 .collapse {
   color: $white;
   margin-bottom: 20px;
+  font-family: "Montserrat";
 
   @for $i from 1 through 4 {
     &:nth-of-type(#{$i}) {
@@ -24,6 +25,9 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: larger;
 
     @include media-query(small) {
       height: 38px;
@@ -64,12 +68,12 @@
   }
   &__text {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
     @include media-query(medium) {
-      font-size: 14px;
+      font-size: 18px;
     }
     @include media-query(large) {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
   &__list {

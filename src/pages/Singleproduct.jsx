@@ -3,7 +3,6 @@ import products from "../__mocks__/data.json";
 
 import Rating from "../components/Rating";
 import Host from "../components/Host";
-// import Slider from "../components/Slider";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 import Slider from "../components/Slider";
@@ -33,8 +32,8 @@ const SingleProduct = () => {
         </div>
       </div>
       <div className="singleproduct__dropdowns">
-        <Collapse title="description" content={description} />
-        <Collapse title="équipement" content={equipments} />
+        <Collapse title="Description" content={description} />
+        <Collapse title="Equipement" content={equipments} />
       </div>
     </main>
   );

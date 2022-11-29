@@ -13,10 +13,9 @@
   $white: #fff;
   
   $breakpoints: (
-    small: 100px,
-    medium: 70px,
+    small: 350px,
+    medium: 801px,
     large: 1300px,
-    xlarge: 1900px,
   );
   
   @mixin verticalCenter {

@@ -1,16 +1,16 @@
 .about {
-  margin: 0 5%;
-
   &__dropdowns {
     width: 100%;
 
     text-align: auto;
     margin-left: auto;
     margin-right: auto;
+
+    @include media-query(medium) {
+      padding: 0 3%;
+  }
     @include media-query(large) {
-      margin: 1%;
-      margin-left: auto;
-      margin-right: auto;
+      padding: 0 6%;
     }
   }
 }

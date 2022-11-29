@@ -4,7 +4,7 @@
   
     &__name {
       font-size: 12px;
-      font-weight: 500;
+      font-weight: bolder;
       margin-right: 10px;
       @include media-query(medium) {
         font-size: 15px;

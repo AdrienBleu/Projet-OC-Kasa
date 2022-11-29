@@ -21,10 +21,29 @@
     }
   
     &__inactive-picture {
-      transform: scale(1.05);
+      transform: scale(1);
       transition: transform 300ms;
     }
-  
+
+    &__count {
+      span{
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        color: white;
+        font-size: medium;
+        font-weight: bold;
+        @include media-query(small) {
+          height: medium;
+        }
+        @include media-query(medium) {
+          font-size: large;
+        }
+        @include media-query(large) {
+          font-size: x-large;
+        } } 
+    }
+
     &__picture {
       width: inherit;
       height: inherit;
@@ -54,7 +73,12 @@
     &__next {
       right: 0;
     }
-  
+    &__count {
+      bottom: 0;
+      left: 50%;
+      position: absolute;
+      color: white;
+    }
     &__next-icon {
       margin-right: 5px;
     }

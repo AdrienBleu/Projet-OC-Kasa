@@ -1,7 +1,7 @@
 .main {
     margin: 0px 100px;
     @include media-query(small) {
-      margin: 0px 2%;
+      margin: 0px 5%;
     }
     @include media-query(medium) {
       margin: 0px 5%;
