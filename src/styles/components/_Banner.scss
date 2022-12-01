@@ -1,8 +1,12 @@
 .banner {
     border-radius: 20px;
     position: relative;
-    margin: 20px 0;
+    margin: 10px 0;
     height: 200px;
+
+    @include media-query(small) {
+      height: 167px;
+    }
 
     @include media-query(medium) {
       height: 167px;
@@ -16,13 +20,22 @@
       object-fit: cover;
       width: 100%;
       height: 100%;
+      
+      @include media-query(small) {
+        border-radius:  10px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+      }
+
     }
   
     &__overlay {
       background-color: $color-3;
       position: absolute;
       top: 0;
-      border-radius: 25px;
+      border-radius: 10px;
       height: 100%;
       width: 100%;
       opacity: 0.3;

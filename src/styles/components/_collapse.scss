@@ -30,14 +30,16 @@
     font-size: larger;
 
     @include media-query(small) {
-      height: 38px;
+      height: 30px;
+      font-size: smaller;
     }
     @include media-query(medium) {
-      height: 46px;
-      border-radius: 10px;
+      height: 44px;
+      font-size: large;
     }
     @include media-query(large) {
-      height: 52px;
+      height: 50px;
+      font-size: larger;
     }
   }
 

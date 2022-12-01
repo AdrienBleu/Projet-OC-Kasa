@@ -1,8 +1,7 @@
 import Banner from "../components/Banner";
 import aboutData from "../__mocks__/aboutData";
 import Collapse from "../components/Collapse";
-import imageBanner from "../assets/img/aboutbannerDesktop.png";
-import imageBannerMobile from "../assets/img/aboutbannerSmartphone.png";
+import imageBanner from "../assets/img/aboutbanner.png";
 
 const About = () => {
   const content = (title) => {
@@ -25,7 +24,6 @@ const About = () => {
     <main className="main">
       <section className="about">
         <Banner image={imageBanner} />
-        <Banner image={imageBannerMobile} />
         <div className="about__dropdowns">
           <Collapse title="Fiabilité" content={content("fiability")} />
           <Collapse title="Respect" content={content("respect")} />
