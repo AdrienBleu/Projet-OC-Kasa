@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import products from "../__mocks__/data.json";
+import { Navigate } from "react-router-dom";
 
 import Rating from "../components/Rating";
 import Host from "../components/Host";
@@ -10,9 +11,9 @@ import Slider from "../components/Slider";
 const SingleProduct = () => {
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
-  const { title, location, rating, host, equipments, description, pictures } =
-    product;
-
+  
+  if (product) {
+  const { title, location, rating, host, equipments, description, pictures } = product;
   return (
     <main className="singleproduct">
       { <Slider slides={pictures} /> }
@@ -37,6 +38,11 @@ const SingleProduct = () => {
       </div>
     </main>
   );
+}
+else {
+  return <Navigate to="/error" replace={true} />
+
+}
 };
 
 export default SingleProduct;
