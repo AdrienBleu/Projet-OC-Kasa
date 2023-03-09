@@ -7,9 +7,7 @@
   width: 100%;
   margin-top: 70px;
 
-
- }
-  .errorNumber {
+  &__errorNumber {
     margin: 33px;
     width: 300px;
     height: 130px;
@@ -29,7 +27,8 @@
       width: 400px;
       height: 200px;}
     }
-  .errorText {
+
+    &__Text {
     font-size: 18px;
     margin-bottom: 133px;
     width: 260px;
@@ -54,7 +53,7 @@
     }
 
   }
-  .errorBackLink {
+  &__BackLink {
     font-size: 16px;
     margin: 42px;
     text-decoration: underline;
@@ -74,3 +73,4 @@
       text-decoration: underline;
     }
   }
+}

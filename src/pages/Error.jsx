@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <main className="main">
       <div className="error">
-        <h2 className="errorNumber">
+        <h2 className="error__Number">
           <svg
             height="100%"
             width="100%"
@@ -19,11 +19,11 @@ const Error = () => {
             />
           </svg>
         </h2>
-        <h3 className="errorText">
+        <h3 className="error__Text">
           Oups! La page que vous demandez n'existe pas.
         </h3>
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li className="errorBackLink">Retourner sur la page d'accueil</li>
+          <li className="error__BackLink">Retourner sur la page d'accueil</li>
         </NavLink>
       </div>
     </main>
